@@ -4,6 +4,15 @@ for (let index = 1; index <= 100; index++) {
     text: index
   }));
 }
+// populate the assignedToSelect dropdown in the add ticket modal
+function populateAssignedToSelect () {
+  for (let index = 1; index <= 100; index++) {
+    $('#assignedToSelect').append($('<option>', {
+      value: index,
+      text: 'Louis Pogi'
+    }));
+  }
+}
 
 $('#addTicketBtn').on("click", function() {
   $('#loadingModal').modal({
