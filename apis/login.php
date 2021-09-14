@@ -11,7 +11,7 @@ use Classes\Validations as Validations;
 $validations = new Validations();
 $validations->validate([
   'method' => 'POST',
-  'data' => ['username', 'password']
+  'string' => ['username','password']
 ]);
 //echo $result;
 ?>

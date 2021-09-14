@@ -7,7 +7,8 @@ Class Validations
 
     public function validate($request)
     {
-       echo json_encode($request);
+    
+       echo (sizeof($request['string']));
     }
 }
 ?>
